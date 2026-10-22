@@ -17,7 +17,7 @@ If you make mods, the built-in Workshop is where you browse the game's files, ed
 
 ## Install
 
-1. Download the `.dmg` from the Release page.
+1. Download the `.dmg` from the [Release page](https://github.com/aphelios623/LTK-mac/releases/latest).
 2. Drag **LTK Manager** into Applications and open it (see the first-launch note above).
 3. Open Settings and set the League path to `/Applications/League of Legends.app/Contents/LoL` if auto-detect doesn't find it.
 
