@@ -1,97 +1,29 @@
-# 🛠️ LTK Manager
+# LTK Manager for macOS
 
-The next-generation mod manager for League of Legends, built by the [League Toolkit](https://github.com/LeagueToolkit) organization. LTK Manager is the modern successor to [cslol-manager](https://github.com/LeagueToolkit/cslol-manager), rebuilt from the ground up with a Rust backend and a React-based UI.
+> **Unofficial macOS (Apple Silicon) build.** This is a community port of [LTK Manager](https://github.com/LeagueToolkit/ltk-manager) by the [League Toolkit](https://github.com/LeagueToolkit) team, based on [pull request #202](https://github.com/LeagueToolkit/ltk-manager/pull/202), which adds Apple Silicon macOS support. All credit for LTK Manager goes to the League Toolkit team and to the author of that pull request. **This project isn't affiliated with or endorsed by the LeagueToolkit team or Riot Games.**
 
-[![Releases](https://img.shields.io/github/v/release/LeagueToolkit/ltk-manager?style=for-the-badge)](https://github.com/LeagueToolkit/ltk-manager/releases)
-[![License: MIT/Apache-2.0](https://img.shields.io/badge/License-MIT%2FApache--2.0-blue?style=for-the-badge)](https://github.com/LeagueToolkit/ltk-manager)
-[![Windows 10+](https://img.shields.io/badge/Windows-10+-0078D4?style=for-the-badge&logo=windows)](https://www.microsoft.com/windows)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLeagueToolkit%2Fltk-manager.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FLeagueToolkit%2Fltk-manager?ref=badge_shield)
+LTK Manager is the frontier mod manager for League of Legends. Install custom skins, HUDs, maps, audio and much more. One of the main goals is to support mods so they work indefinitely without breaking between patches. It is the [League Toolkit](https://github.com/LeagueToolkit) team's successor to [cslol-manager](https://github.com/LeagueToolkit/cslol-manager).
 
----
+If you make mods, the built-in Workshop is where you browse the game's files, edit your mod and pack it, without leaving the window.
 
-## 📸 Screenshots
+## About this build
 
-|                  Mod Library                  |                  Workshop                   |                  Settings                   |
-| :-------------------------------------------: | :-----------------------------------------: | :-----------------------------------------: |
-| ![Mod Library](docs/screenshots/library.webp) | ![Workshop](docs/screenshots/workshop.webp) | ![Settings](docs/screenshots/settings.webp) |
+- For macOS on Apple Silicon (M-series) only.
+- Unsigned, so macOS blocks it on first launch. Right-click the app, choose **Open**, then **Open** again. If macOS says the app is damaged, run `xattr -cr "/Applications/LTK Manager.app"` and try again.
+- Asks for your administrator password each time the patcher starts and stops.
+- Mods built for a different game version can crash League.
 
----
+## Install
 
-## ✨ Features
+1. Download the `.dmg` from the Release page.
+2. Drag **LTK Manager** into Applications and open it (see the first-launch note above).
+3. Open Settings and set the League path to `/Applications/League of Legends.app/Contents/LoL` if auto-detect doesn't find it.
 
-- **Mod Library** — Install, enable, disable, reorder, and uninstall mods with a visual card-based interface. Supports drag-and-drop installation.
-- **Profile Management** — Create multiple profiles to quickly switch between different mod configurations.
-- **Workshop (Creator Tools)** — Build and package your own mods with a full project editor, layer management, and `.modpkg` export.
-- **Mod Inspector** — Preview mod contents and metadata before installing.
-- **Overlay Patcher** — Apply your mods to League of Legends with a single click. Real-time progress tracking keeps you informed.
-- **Automatic Updates** — The app checks for new versions and can update itself in the background.
-- **Theming** — Dark and light themes with a fully customizable accent color and optional backdrop images.
+## Disclaimer
 
-### Supported Mod Formats
+- Modifying game files is against Riot's terms, and use is at the user's own risk.
+- This project isn't affiliated with or endorsed by the LeagueToolkit team or Riot Games.
 
-| Format     | Description                                                                                                |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| `.modpkg`  | LeagueToolkit mod package — the recommended format with full metadata, thumbnails, and multi-layer support |
-| `.fantome` | Legacy Fantome format — automatically recognized and fully supported                                       |
+## Credits and license
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- **Windows 10/11 (64-bit) or macOS (Apple Silicon)**. Linux support is planned.
-- **League of Legends** — a valid game installation.
-
-### Installation
-
-1. Go to the [latest release](https://github.com/LeagueToolkit/ltk-manager/releases/latest).
-2. Download the `.msi` installer (recommended) or the NSIS `.exe` installer.
-3. Run the installer and launch **LTK Manager**.
-4. On first launch, the app will attempt to auto-detect your League of Legends installation. If it can't find it, you'll be prompted to select the game folder manually.
-
-### Installing Mods
-
-1. Download a mod in `.modpkg` or `.fantome` format from your preferred source.
-2. Drag and drop the file onto the LTK Manager window, or use the install button.
-3. Enable the mod in your library and click **Run** to start the patcher.
-
----
-
-## ⚖️ License & Reuse
-
-LTK Manager is open-source under a dual **MIT / Apache-2.0** license — you may choose either.
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FLeagueToolkit%2Fltk-manager.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FLeagueToolkit%2Fltk-manager?ref=badge_large)
-
-### `cslol-dll.dll` Policy
-
-This application bundles `cslol-dll.dll`, the core injection module originally from cslol-manager. Its use and redistribution are governed by the [CSLOL DLL License Addendum](LICENSE-CSLOL.md).
-
-If you are a developer looking to reuse this DLL in your own launcher or tool, you must comply with the following:
-
-1. **Re-signing** — You may not redistribute the DLL with the official signature. You must re-sign it using your own publicly trusted code-signing certificate.
-2. **Transparency** — You must publish your certificate's SHA-256 fingerprint and the DLL's SHA-256 hash in your project's documentation or about page.
-3. **Anti-Skinhacking** — You must implement technical measures to prevent the use of "skinhacking" (replicating paid content) and competitive advantage mods.
-4. **No Reverse Engineering** — Patching or tampering with the DLL itself is strictly prohibited.
-
-For full terms, see [LICENSE-CSLOL.md](LICENSE-CSLOL.md).
-
----
-
-## ⚠️ Disclaimer
-
-- **Use at your own risk.** This software is not endorsed by or affiliated with Riot Games.
-- **Server support:** Officially supports Riot-operated servers. Asian servers and Garena are not officially supported and may experience issues.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-If you'd like to build LTK Manager from source or work on the codebase, see the [Development Guide](docs/DEVELOPMENT.md).
-
----
-
-Developed by the **[League Toolkit](https://github.com/LeagueToolkit)** organization.
+LTK Manager is developed by the [League Toolkit](https://github.com/LeagueToolkit) team: https://github.com/LeagueToolkit/ltk-manager. The macOS support comes from their pull request #202. The original license applies; see the `LICENSE` file.
