@@ -1,5 +1,7 @@
 # LTK Manager for macOS
 
+**[Download the latest release (macOS, Apple Silicon)](https://github.com/aphelios623/LTK-mac/releases/latest)**
+
 > **Unofficial macOS (Apple Silicon) build.** This is a community port of [LTK Manager](https://github.com/LeagueToolkit/ltk-manager) by the [League Toolkit](https://github.com/LeagueToolkit) team, based on [pull request #202](https://github.com/LeagueToolkit/ltk-manager/pull/202), which adds Apple Silicon macOS support. All credit for LTK Manager goes to the League Toolkit team and to the author of that pull request. **This project isn't affiliated with or endorsed by the LeagueToolkit team or Riot Games.**
 
 LTK Manager is the frontier mod manager for League of Legends. Install custom skins, HUDs, maps, audio and much more. One of the main goals is to support mods so they work indefinitely without breaking between patches. It is the [League Toolkit](https://github.com/LeagueToolkit) team's successor to [cslol-manager](https://github.com/LeagueToolkit/cslol-manager).
