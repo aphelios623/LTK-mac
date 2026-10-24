@@ -4,6 +4,7 @@ import { open } from "@tauri-apps/plugin-shell";
 import type { LucideIcon } from "lucide-react";
 import {
   Accessibility,
+  Download,
   FolderOpen,
   Hammer,
   Library,
@@ -26,6 +27,7 @@ import { NotificationCenter } from "./NotificationCenter";
 const navItems = [
   { to: "/", label: "Library", icon: Library, exact: true },
   { to: "/workshop", label: "Workshop", icon: Hammer, exact: false },
+  { to: "/browse", label: "Browse", icon: Download, exact: false },
 ] as const;
 
 const linkBaseClass =

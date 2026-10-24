@@ -74,6 +74,9 @@ fn main() {
             commands::get_mod_wad_report,
             commands::get_all_mod_wad_reports,
             commands::analyze_mod_wads,
+            // Browse
+            commands::browse_list_skins,
+            commands::browse_install_skin,
             // Folders
             commands::get_folders,
             commands::get_folder_order,

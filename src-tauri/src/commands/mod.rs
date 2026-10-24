@@ -17,6 +17,7 @@
 //! See `docs/ERROR_HANDLING.md` for details.
 
 mod app;
+mod browse;
 mod deep_link;
 mod diagnostics;
 mod folders;
@@ -32,6 +33,7 @@ mod storage;
 mod workshop;
 
 pub use app::*;
+pub use browse::*;
 pub use deep_link::*;
 pub use diagnostics::*;
 pub use folders::*;
